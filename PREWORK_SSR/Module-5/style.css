@@ -1,0 +1,27 @@
+p {color:red}
+
+#first {color:blue}
+
+#second {color:green}
+
+#third {font-size:28px}
+
+#fourth {font-size: 10px}
+
+#fifth {text-align: center}
+
+#sixth {font-weight: bold}
+
+#seventh {font-family:sans-serif}
+
+#eighth {font-size:30px;
+    color:orange;
+    font-weight: bold}
+
+.styledFont {font-style: italic;
+    color:orchid;font-size: 25px;}
+img  {border-style: solid;
+    color:red;
+    border-width:thick}
+img {display: block;
+margin-left: auto;margin-right: auto}

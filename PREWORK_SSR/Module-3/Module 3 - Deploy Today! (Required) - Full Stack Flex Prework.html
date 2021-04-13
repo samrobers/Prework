@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/ -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/img/favicon.ico">
+  <title>Module 3 - Deploy Today! (Required) - Full Stack Flex Prework</title>
+  <link href="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/theme_extra.css" type="text/css">
+  <link rel="stylesheet" href="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/github.min.css">
+  <link href="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/badge_only.css" rel="stylesheet">
+  <link href="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/readthedocs-doc-embed.css" rel="stylesheet">
+  
+  <script type="text/javascript" async="" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/js"></script><script type="text/javascript" async="" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/analytics.js.download"></script><script>
+    // Current page data
+    var mkdocs_page_name = "Module 3 - Deploy Today! (Required)";
+    var mkdocs_page_input_path = "modules/chapter3.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/jquery-2.1.1.min.js.download" defer=""></script>
+  <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/modernizr-2.8.3.min.js.download" defer=""></script>
+  <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/highlight.min.js.download"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+<script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/js(1)" type="text/javascript" async=""></script></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/" class="icon icon-home"> Full Stack Flex Prework</a>
+        <div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here">
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter1/">Module 1 - Prepare for Prework (Required)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter2/">Module 2 - Installing Your Tools (Required)</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/">Module 3 - Deploy Today! (Required)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#module-3-deploy-today">Module 3: Deploy Today!</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#in-this-video-series-you-will-go-create-a-deployed-live-on-the-internet-about-me-webpage-by">In this video series you will go create a deployed (live on the internet) "About Me" webpage by:</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#your-job">Your job:</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#module-3-deliverable">Module 3 Deliverable</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-1-terminalgit-bash-part-1">Part 1: Terminal/Git Bash Part 1</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-2-terminalgit-bash-part-2">Part 2: Terminal/Git Bash Part 2</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-3-vs-code-shortcuts">Part 3: VS Code Shortcuts</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-4-setting-up-git-ssh-keys">Part 4: Setting Up Git SSH Keys</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-5-git-configs">Part 5: Git Configs</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-6-forking-a-repository">Part 6: Forking A Repository</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-7-cloning-a-repository">Part 7: Cloning A Repository</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-8-updating-your-webpage">Part 8: Updating Your Webpage</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-9-pushing-your-changes-to-github">Part 9: Pushing Your Changes To Github</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-10-enabling-github-pages">Part 10: Enabling Github Pages</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-11-final-updates-and-push-to-github">Part 11: Final Updates and Push To Github</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#part-12-share-the-website-with-your-friends-and-family">Part 12: Share the Website with your Friends and Family</a></li>
+        
+            <li><a class="toctree-l3" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/#prework-support">Prework Support</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter4/">Module 4 - HTML Basics (Required)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter5/">Module 5 - CSS Basics (Required)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter6/">Module 6 - JavaScript Basics (Required)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter7/">Module 7 - Programming Logic Basics (Required)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter8/">Module 8 - Debugging Basics (Required)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter9/">Module 9 - What Is A Web Developer? (Recommended)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter10/">Module 10 - How To Succeed In This Course (Recommended)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter11/">Module 11 - Becoming Employable (Recommended)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter12/">Module 12 - Type Like a Pro (Recommended)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter13/">Module 13 - Whiteboarding Interview Prep (Recommended)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter14/">Module 14 - Be Original (Recommended)</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter15/">Module 15 - What Next? (Recommended)</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/">Full Stack Flex Prework</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/">Docs</a> »</li>
+    
+      
+    
+    <li>Module 3 - Deploy Today! (Required)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="module-3-deploy-today">Module 3: Deploy Today!</h1>
+<p><strong>NOTE</strong>: Historically, the most common name for the main body of a codebase has been <code>master</code>. Recently, however, <code>main</code> has been gaining in popularity. In fact, GitHub now uses <code>main</code> as the default branch in its repositories. The videos in the following sections use <code>master</code> as the default branch, but you will likely see <code>main</code> as the default branch when working with GitHub. Be aware that you might see instances of both throughout your development career.</p>
+<h4 id="in-this-video-series-you-will-go-create-a-deployed-live-on-the-internet-about-me-webpage-by">In this video series you will go create a deployed (live on the internet) "About Me" webpage by:</h4>
+<p>1. Learning basic terminal / git bash skills.</p>
+<p>2. Setting up your git ssh keys.</p>
+<p>3. Forking a repository on Github.</p>
+<p>4. Cloning that repository to your local computer.</p>
+<p>5. Opening that repository in VS Code and making small changes to the HTML.</p>
+<p>6. Tracking those changes with git version control.</p>
+<p>7. Pushing those changes to a live Github Pages webpage.</p>
+<p>8. Sharing it with your friends and family!</p>
+<h4 id="your-job">Your job:</h4>
+<ul>
+<li>Watch the videos in order.</li>
+<li>Complete the tasks.</li>
+<li>Answer the check for understanding questions.</li>
+</ul>
+<p>Here is a live example of what you will have deployed by the end of the module <a href="https://coding-boot-camp.github.io/prework-about-me/">https://coding-boot-camp.github.io/prework-about-me/</a>. </p>
+<p>Your website will have all of the details filled in of course!</p>
+<h2 id="module-3-deliverable">Module 3 Deliverable</h2>
+<p>For this module, you'll be creating your first website. You will submit a text file with a link to your website. You can add this file to the prework folder on your computer and place it in the Module-3 subfolder.</p>
+<h2 id="part-1-terminalgit-bash-part-1">Part 1: Terminal/Git Bash Part 1</h2>
+<h4 id="commands-covered-in-this-video">Commands covered in this video</h4>
+<ul>
+<li><code>ls</code> - list files in current directory (folder)</li>
+<li><code>mkdir</code> - make a new directory </li>
+<li><code>cd</code> - change into a different directory</li>
+<li><code>touch</code> - create a new file</li>
+</ul>
+<h4 id="mac-video">Mac video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/XsbLlPtid9s.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h4 id="windows-video">Windows video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/srO_vvBohkI.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform.html" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-2-terminalgit-bash-part-2">Part 2: Terminal/Git Bash Part 2</h2>
+<h4 id="commands-covered-in-this-video_1">Commands covered in this video</h4>
+<ul>
+<li><code>pwd</code> - print our working directory</li>
+<li><code>mv</code> - rename a file</li>
+<li><code>rm</code> - remove a file</li>
+<li><code>history</code> - show all of the commands you have run</li>
+<li><code>cmd k</code> - clears the output on your terminal</li>
+</ul>
+<h4 id="mac-video_1">Mac Video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/5I1rlq7qkps.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h4 id="windows-video_1">Windows Video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/1SzB7IjpN9M.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(1).html" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-3-vs-code-shortcuts">Part 3: VS Code Shortcuts</h2>
+<h4 id="command-covered-in-this-video">Command covered in this video</h4>
+<ul>
+<li><code>code</code> - opens VS Code from your terminal</li>
+</ul>
+<h4 id="mac-video_2">Mac Video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/zi8swCYznyk.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h4 id="windows-video_2">Windows Video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/zMFP1V-peX0.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(2).html" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-4-setting-up-git-ssh-keys">Part 4: Setting Up Git SSH Keys</h2>
+<h4 id="links-referenced-in-this-video">Links referenced in this video</h4>
+<ul>
+<li>
+<p>Step 1: <a href="https://help.github.com/articles/checking-for-existing-ssh-keys/">Checking For SSH Keys</a></p>
+</li>
+<li>
+<p>Step 2: <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generating New SSH Keys</a></p>
+</li>
+<li>
+<p>Step 3: <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">Adding SSH Keys To Github</a></p>
+</li>
+</ul>
+<hr>
+<h4 id="mac-video_3">Mac Video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/0NUuFsLlpLw.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h4 id="windows-video_3">Windows Video:</h4>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/cLtLoj46Yy8.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(3).html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-5-git-configs">Part 5: Git Configs</h2>
+<h4 id="commands-used-in-this-video">Commands used in this video</h4>
+<ul>
+<li><code>git config --global user.name "Your Name"</code></li>
+<li><code>git config --global user.email "youremail@gmail.com"</code></li>
+</ul>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/UA2Rm7iTQRk.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(4).html" width="100%" height="514" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<p><strong>Note</strong>: Historically, the most common name for the main body of a codebase has been <code>master</code>. Recently, however, <code>main</code> has been gaining in popularity. In fact, GitHub now uses <code>main</code> as the default branch in its repositories. The videos in the following sections use <code>master</code> as the default branch, but you will likely see <code>main</code> as the default branch when working with GitHub. Be aware that you might see instances of both throughout your development career.</p>
+<hr>
+<h2 id="part-6-forking-a-repository">Part 6: Forking A Repository</h2>
+<ul>
+<li>
+<p><strong>Tip</strong>: Forking is when you make a copy of someone else's repo into your account.</p>
+</li>
+<li>
+<p>Fork This Repo =&gt; <a href="https://github.com/coding-boot-camp/prework-about-me">https://github.com/coding-boot-camp/prework-about-me</a></p>
+</li>
+</ul>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/0dRn0ViBq8A.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(5).html" width="100%" height="474" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-7-cloning-a-repository">Part 7: Cloning A Repository</h2>
+<ul>
+<li>
+<p><strong>Tip</strong>: Cloning is when you make a copy of a repo from Github onto your local computer.</p>
+</li>
+<li>
+<p>You Will Be Cloning The Repo You Just Forked In The Last Step</p>
+</li>
+</ul>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/ESzbHKbcwSk.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(6).html" width="100%" height="474" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-8-updating-your-webpage">Part 8: Updating Your Webpage</h2>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/BADFnu5jlDk.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(7).html" width="100%" height="474" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-9-pushing-your-changes-to-github">Part 9: Pushing Your Changes To Github</h2>
+<h4 id="commands-covered-in-this-video_2">Commands covered in this video</h4>
+<ul>
+<li><code>git status</code> displays the state of the working directory and the staging area.</li>
+<li><code>git add</code> adds your <code>index.html</code> to the staging area.</li>
+<li><code>git commit</code> puts your changes into your local repo.</li>
+<li><code>git push</code> pushes your changes to your Github repo.</li>
+</ul>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/c1MusxLzSvM.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(8).html" width="100%" height="474" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-10-enabling-github-pages">Part 10: Enabling Github Pages</h2>
+<iframe width="100%" height="450" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/P4Mu1t5rIXg.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(9).html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-11-final-updates-and-push-to-github">Part 11: Final Updates and Push To Github</h2>
+<iframe width="100%" height="400" src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/BsEfH_A6eo4.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr>
+<iframe src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/viewform(10).html" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<hr>
+<h2 id="part-12-share-the-website-with-your-friends-and-family">Part 12: Share the Website with your Friends and Family</h2>
+<p>Copy the GitHub Pages link in the address bar of your browser and send it to your friends and family to show off your first website.</p>
+<p>Finally, add a text file with the link to your website to the Module-3 subfolder of your prework folder.</p>
+<hr>
+<h2 id="prework-support">Prework Support</h2>
+<p>Looking for prework support? Our team of tutors are eager to help! Request a tutor session with the following steps:</p>
+<p>1. If not already logged in to BCS, login using your credentials <em>(supplied 24 hours after enrollment)</em>.</p>
+<p>2. Click <strong>Support</strong> in the top right.</p>
+<p>3. Complete the form fields to submit your request:</p>
+<ul>
+<li>
+<p>Under <strong>Question Category</strong>, select "Tutor Request.”</p>
+</li>
+<li>
+<p>Under <strong>Question Category</strong>, select "Request a Tutor.”</p>
+</li>
+<li>
+<p>Under <strong>Currently, Which Sessions Would You Like to Discuss?</strong>, select “Prework assignment”.</p>
+</li>
+</ul>
+<p>4. Complete the additional fields and submit your request.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter4/" class="btn btn-neutral float-right" title="Module 4 - HTML Basics (Required)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter2/" class="btn btn-neutral" title="Module 2 - Installing Your Tools (Required)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Coding Boot Camp © 2020. All Rights Reserved.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter2/" style="color: #fcfcfc;">« Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter4/" style="color: #fcfcfc">Next »</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/theme.js.download" defer=""></script>
+      <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/readthedocs-data.js.download" defer=""></script>
+      <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/readthedocs-doc-embed.js.download" defer=""></script>
+      <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/readthedocs-analytics.js.download" defer=""></script>
+      <script src="./Module 3 - Deploy Today! (Required) - Full Stack Flex Prework_files/main.js.download" defer=""></script>
+
+
+
+<!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+  <div class="rst-versions rst-badge" data-toggle="rst-versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book">&nbsp;</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        <dd><a href="https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/">latest</a></dd>
+         </strong> 
+        
+      </dl>
+      
+      
+
+      
+      
+      
+
+      
+
+  <dl>
+    
+    <dt>On Read the Docs</dt>
+    <dd>
+    <a href="https://readthedocs.com/projects/coding-bootcamp-fsf-prework/">Project Home</a>
+    </dd>
+    <dd>
+    <a href="https://readthedocs.com/projects/coding-bootcamp-fsf-prework/builds/">Builds</a>
+    </dd>
+    <dd>
+    <a href="https://readthedocs.com/projects/coding-bootcamp-fsf-prework/downloads/">Downloads</a>
+    </dd>
+  </dl>
+
+
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/coding-boot-camp/FSF-Prework-v2/blob/master/docs/modules/chapter3.md">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/coding-boot-camp/FSF-Prework-v2/edit/master/docs/modules/chapter3.md">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+
+      
+  
+
+
+      <hr>
+      
+Documentation hosted by <a href="https://readthedocs.com/">Read the Docs</a>.
+
+
+      
+    </div>
+  </div>
+  
+
+</div>
+</body></html>
